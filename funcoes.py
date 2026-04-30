@@ -22,11 +22,11 @@ def verificar_vencedor(tabuleiro, simbolo):
         ):
             return True
 
-    # Verifica diagonal principal
+    
     if tabuleiro[0][0] == simbolo and tabuleiro[1][1] == simbolo and tabuleiro[2][2] == simbolo:
         return True
 
-    # Verifica diagonal secundária
+    
     if tabuleiro[0][2] == simbolo and tabuleiro[1][1] == simbolo and tabuleiro[2][0] == simbolo:
         return True
 
