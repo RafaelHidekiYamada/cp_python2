@@ -42,9 +42,11 @@ def verificar_empate(tabuleiro):
 
 
 def jogada_valida(tabuleiro, linha, coluna):
+    # Verifica se a linha ou a coluna estão fora do limite do tabuleiro.
     if linha < 0 or linha > 2 or coluna < 0 or coluna > 2:
         return False
 
+    # Verifica se a posição escolhida já está ocupada.
     if tabuleiro[linha][coluna] != " ":
         return False
 
